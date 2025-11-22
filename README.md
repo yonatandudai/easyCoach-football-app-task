@@ -159,7 +159,7 @@ FLASK_ENV=development
 SECRET_KEY=<generate-random-secret-key>
 
 # EasyCoach API
-EASYCOACH_API_URL=<api-URL>
+EASYCOACH_API_URL=https://ifa.easycoach.club/en/api/v3/analytics
 EASYCOACH_API_TOKEN=<your-api-token>
 ```
 
@@ -286,6 +286,7 @@ Open your browser and navigate to: `http://localhost:5173`
 | `FLASK_APP` | Flask application module | Yes |
 | `FLASK_ENV` | Environment (development/production) | No |
 | `SECRET_KEY` | Flask secret key for sessions | Yes |
+| `EASYCOACH_API_URL` | EasyCoach API base URL | Yes |
 | `EASYCOACH_API_TOKEN` | EasyCoach API read-only token | Yes |
 
 ### API Credentials
@@ -293,10 +294,11 @@ Open your browser and navigate to: `http://localhost:5173`
 EasyCoach API credentials should be stored in `.env` file:
 
 ```env
+EASYCOACH_API_URL=https://ifa.easycoach.club/en/api/v3/analytics
 EASYCOACH_API_TOKEN=<your-token>
 ```
 
-The API token is read-only and used to fetch match data from EasyCoach IFA API.
+The API URL and token are used to fetch match data from EasyCoach IFA API.
 
 ## 📝 Assumptions
 
