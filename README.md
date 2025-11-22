@@ -246,6 +246,7 @@ Open your browser and navigate to: `http://localhost:5173`
    - Real player positions (RW, ST, LCM, etc.)
    - Actual minutes played (game_time)
    - Goal/card events with video timestamps
+   - **Note**: You'll need to obtain this file from the EasyCoach API. Place it in `backend/` directory as `breakdown_game_1061429_league_726.json`
 
 ### Data Processing
 
